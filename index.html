@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot UI </title>
+    <link rel="stylesheet" href="chatbot.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="chatbot.js"></script>
+</head>
+<body>
+
+    <!--Intro-->
+    <div class="intro">
+        <h1>
+        AI-Powered Live Chat Widget
+    </h1>
+    <h3>
+        Try Now!
+    </h3>
+    </div>
+
+
+    <!-- Chatbot Widget -->
+    <div id="chatbot">
+        <!-- Chatbot Toggle Button -->
+        <div class="chatbot-toggle" id="chatbot-toggle">
+            <i class="fas fa-comments"></i>
+            <div class="pulse-ring"></div>
+        </div>
+
+        <!-- Chatbot Container -->
+        <div class="chatbot-container" id="chatbot-container">
+            <!-- Chatbot Header -->
+            <div class="chatbot-header">
+                <div class="bot-avatar">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="bot-info">
+                    <h3>AI Assistant</h3>
+                    <span class="status">
+                        <span class="status-dot"></span>
+                        Online
+                    </span>
+                </div>
+                <div class="chatbot-controls">
+                    <button class="close-btn" id="close-btn">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chatbot Messages -->
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="message-content">
+                        <div class="message-bubble">
+                            Hey there! How can I assist you today?
+                        </div>
+                        <div class="message-time">just now</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Typing Indicator -->
+            <div class="typing-indicator" id="typing-indicator">
+                <div class="message-avatar">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="typing-bubble">
+                    <div class="typing-dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chatbot Input -->
+            <div class="chatbot-input">
+                <div class="input-container">
+                    <input type="text" id="message-input" placeholder="Type your message..." maxlength="500">
+                    <div class="input-actions">
+                        <button class="emoji-btn" id="emoji-btn">
+                            <i class="far fa-smile"></i>
+                        </button>
+                        <button class="send-btn" id="send-btn">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="input-footer">
+                    <span class="powered-by">Created by Revotic AI</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+</body>
+</html>
